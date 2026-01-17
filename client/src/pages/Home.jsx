@@ -4,6 +4,7 @@ import Hero from '../components/Home/Hero'
 import Feather from "../components/Home/Feature"
 import Testimonial from '../components/Home/Testimonial'
 import CallToAction from '../components/Home/CallToAction'
+import Footer from '../components/Home/Footer'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <Feather />
         <Testimonial />
         <CallToAction />
+        <Footer />
        
          
     </div>
