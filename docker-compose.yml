@@ -1,0 +1,17 @@
+
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"   # FastAPI backend
+      - "8501:8501"   # Streamlit frontend
+    env_file:
+      - .env
+    environment:
+      - BACKEND_URL=http://localhost:8000
+    volumes:
+      - .:/app
+      - ./backend/chroma_db:/app/backend/chroma_db
+    restart: unless-stopped
+
